@@ -36,11 +36,11 @@ export default function MethodCards({ lang }: MethodCardsProps) {
         </div>
 
         {/* Method Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch max-w-5xl mx-auto">
           {t.steps.map((step, i) => (
             <div
               key={i}
-              className={`bg-white rounded-2xl p-6 md:p-8 shadow-soft border-t-[3px] border-brand-gold group hover:-translate-y-1 hover:shadow-card transition-all duration-300 relative overflow-hidden ${
+              className={`h-full flex flex-col bg-white rounded-2xl p-6 md:p-8 shadow-soft border-t-[3px] border-brand-gold group hover:-translate-y-1 hover:shadow-card transition-all duration-300 relative overflow-hidden ${
                 'fullWidth' in step && step.fullWidth ? 'md:col-span-2 lg:col-span-4 max-w-md mx-auto w-full' : ''
               }`}
             >

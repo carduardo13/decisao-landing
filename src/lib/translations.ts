@@ -465,22 +465,12 @@ export const translations = {
       pages: [
         {
           tab: 'Página 10',
-          chapterTitle: 'Capítulo 1: La Verdad Que Nadie Te Dijo',
+          chapterTitle: 'La Verdad Que Duele -- Pero Libera',
           paragraphs: [
-            { type: 'p', content: 'Hay un momento, generalmente tarde en la noche, cuando te detienes y te preguntas: "¿Por qué me hago esto a mí misma?" Miras el historial de mensajes. Revisas cada palabra que enviaste. Cuentas las horas desde la última respuesta. Y la respuesta que no quieres admitir comienza a surgir en los bordes de tu conciencia.' },
-            { type: 'p-strong', before: 'La verdad es incómoda: ', strong: 'no se trata de él. Se trata de ti.' },
-            { type: 'p', content: 'No se trata de cuán increíble es él o cuán especial parece la conexión. Se trata de un patrón interno que has cargado, en silencio, durante años. Un patrón que dice que tu amor debe ser ganado. Que necesitas probar tu valor. Que el abandono — incluso el sutil, incluso el pequeño — es tu destino natural.' },
-            { type: 'p', content: 'Y aprendiste a llamar a esto "amor intenso." Pero no lo es. Es un ciclo. Y puedes salir de él.' },
-          ],
-          pageLabel: '— Pág. 10 —',
-        },
-        {
-          tab: 'Página 11',
-          chapterTitle: 'La Raíz del Abandono',
-          paragraphs: [
-            { type: 'p-strong', before: 'El abandono no llegó de repente. Comienza ', strong: 'dentro de ti' },
-            { type: 'p', content: 'Comienza en el momento en que tragaste lo que querías decir para no parecer "demasiado difícil." El día que minimizaste tu dolor para no asustar a alguien. La noche que te quedaste despierta esperando un mensaje, fingiendo para ti misma que estabas bien.' },
-            { type: 'italic', content: '"El abandono comienza pequeño... cada vez que silencias tu dolor para mantener a alguien cerca, te alejas de quien realmente eres."' },
+            { type: 'p', content: 'No sufres porque amas demasiado. Sufres porque te abandonas demasiado.' },
+            { type: 'p', content: 'Esa frase puede incomodar. Quizás estés pensando: \'¡Pero yo me entregué!\' Y sí, en parte es verdad.' },
+            { type: 'p', content: 'Pero observa tus últimas relaciones con honestidad brutal: ¿cuántas veces justificaste una ausencia? ¿cuántas veces bajaste tus estándares por miedo a perder a alguien?' },
+            { type: 'p-strong', before: 'Eso no es intensidad emocional. Eso es miedo a estar solo/a. ', strong: 'Y el miedo no es amor es una prisión disfrazada de entrega.' },
           ],
           gate: {
             heading: 'Acabas de diagnosticar tu patrón.',
@@ -496,13 +486,14 @@ export const translations = {
       headingLine2: 'fuerza de voluntad.',
       subheading: 'Necesitas un método. Siete pasos estructurados para reprogramar definitivamente tu patrón afectivo.',
       steps: [
-        { letter: 'D', title: 'Diagnóstico Emocional', text: 'Identificar con precisión los patrones de relación que se repiten, los desencadenantes emocionales y el origen de tu ciclo de dependencia afectiva.' },
-        { letter: 'E', title: 'Eliminación de Patrones', text: 'Aplicar técnicas estructuradas para interrumpir respuestas automáticas — los comportamientos que repites sin darte cuenta en cada relación.' },
-        { letter: 'C', title: 'Conciencia Afectiva', text: 'Desarrollar claridad sobre lo que genuinamente quieres versus lo que el miedo al abandono te hace aceptar. Distinguir el amor real del apego disfuncional.' },
-        { letter: 'I', title: 'Inteligencia Emocional Práctica', text: 'Ejercicios aplicables inmediatamente para la regulación emocional — qué hacer cuando llega la ansiedad, cuando aprieta la nostalgia, cuando el impulso de ceder es fuerte.' },
-        { letter: 'S', title: 'Separación entre Amor y Apego', text: 'Entender la diferencia fundamental entre amar a alguien con libertad y aferrarse por miedo — y aprender a amar sin perderte en el proceso.' },
-        { letter: 'I', title: 'Autoestima Reconstruida', text: 'Un protocolo práctico para reconstruir la relación contigo mismo(a) — desde cero si es necesario. Ningún cambio afectivo es sostenible sin una base sólida de autovaloración.', letterSmall: true },
-        { letter: 'Ó', title: 'Opción Consciente', text: 'El último paso: aprender a elegir — tus relaciones, tus límites, tus respuestas emocionales — desde un lugar de claridad, no de carencia.', fullWidth: true },
+        { letter: 'D', title: 'Diagnóstico', text: 'Identificar tus patrones emocionales con honestidad.' },
+        { letter: 'E', title: 'Eliminación', text: 'Cortar los comportamientos que alimentan el ciclo.' },
+        { letter: 'C', title: 'Consciencia', text: 'Observar tus emociones sin ser dominado/a por ellas.' },
+        { letter: 'I', title: 'Inteligencia', text: 'Herramientas prácticas para actuar con madurez.' },
+        { letter: 'S', title: 'Separación', text: 'Distinguir amor real de apego y miedo.' },
+        { letter: 'I', title: 'Identidad', text: 'Reconstruir la autoestima desde adentro.' },
+        { letter: 'Ó', title: 'Opción', text: 'Elegir con consciencia, no por desesperación.' },
+        { letter: 'N', title: 'Nueva Identidad', text: 'Convertirte en quien decides ser.' },
       ],
     },
 

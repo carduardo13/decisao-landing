@@ -102,20 +102,8 @@ export default function BookPreview({ lang, checkoutUrl }: BookPreviewProps) {
                   {page.chapterTitle}
                 </h3>
 
-                {/* Page 0 — simple paragraphs */}
-                {i === 0 && (
-                  <>
-                    {page.paragraphs.map((p, pi) => renderParagraph(p as Paragraph, pi))}
-                    {'pageLabel' in page && (
-                      <p className="text-right text-xs text-neutral-muted mt-6 font-sans">
-                        {(page as { pageLabel: string }).pageLabel}
-                      </p>
-                    )}
-                  </>
-                )}
-
-                {/* Page 1 — blurred bottom + gate */}
-                {i === 1 && (
+                {/* If page has a gate, render with blur and lock */}
+                {'gate' in page ? (
                   <>
                     <div className="relative">
                       {page.paragraphs.map((p, pi) => renderParagraph(p as Paragraph, pi))}
@@ -126,22 +114,29 @@ export default function BookPreview({ lang, checkoutUrl }: BookPreviewProps) {
                       />
                     </div>
 
-                    {'gate' in page && (
-                      <div className="mt-6 mx-0 p-8 rounded-2xl text-center border-2 border-brand-gold bg-gradient-to-br from-brand-gold/10 to-brand-light/30">
-                        <div className="text-3xl mb-3" aria-hidden="true">🔒</div>
-                        <h4 className="font-serif text-xl font-bold text-neutral-text mb-2">
-                          {page.gate.heading}
-                        </h4>
-                        <p className="text-sm text-neutral-muted mb-5 leading-relaxed whitespace-pre-line">
-                          {page.gate.subtext}
-                        </p>
-                        <a
-                          href={checkoutUrl}
-                          className="inline-block px-8 py-4 rounded-full font-extrabold text-sm uppercase tracking-wide text-white bg-gradient-to-br from-feedback-dor to-feedback-dor-dark shadow-cta transition-all hover:-translate-y-0.5 hover:shadow-[0_16px_40px_rgba(163,29,29,0.5)]"
-                        >
-                          {page.gate.cta}
-                        </a>
-                      </div>
+                    <div className="mt-6 mx-0 p-8 rounded-2xl text-center border-2 border-brand-gold bg-gradient-to-br from-brand-gold/10 to-brand-light/30">
+                      <div className="text-3xl mb-3" aria-hidden="true">🔒</div>
+                      <h4 className="font-serif text-xl font-bold text-neutral-text mb-2">
+                        {(page.gate as any).heading}
+                      </h4>
+                      <p className="text-sm text-neutral-muted mb-5 leading-relaxed whitespace-pre-line">
+                        {(page.gate as any).subtext}
+                      </p>
+                      <a
+                        href={checkoutUrl}
+                        className="inline-block px-8 py-4 rounded-full font-extrabold text-sm uppercase tracking-wide text-white bg-gradient-to-br from-feedback-dor to-feedback-dor-dark shadow-cta transition-all hover:-translate-y-0.5 hover:shadow-[0_16px_40px_rgba(163,29,29,0.5)]"
+                      >
+                        {(page.gate as any).cta}
+                      </a>
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    {page.paragraphs.map((p, pi) => renderParagraph(p as Paragraph, pi))}
+                    {'pageLabel' in page && (
+                      <p className="text-right text-xs text-neutral-muted mt-6 font-sans">
+                        {(page as { pageLabel: string }).pageLabel}
+                      </p>
                     )}
                   </>
                 )}
