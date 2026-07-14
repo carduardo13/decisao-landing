@@ -17,9 +17,9 @@ export default function PainPoints({ lang }: PainPointsProps) {
     <section
       id="dor"
       aria-labelledby="pain-heading"
-      className="py-20 bg-gradient-to-b from-neutral-bg to-[#f5ede9]"
+      className="py-12 md:py-20 bg-gradient-to-b from-neutral-bg to-[#f5ede9]"
     >
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-4 md:px-8">
         {/* Header */}
         <div className="text-center mb-14">
           <span className="inline-block px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest bg-feedback-dor/10 text-feedback-dor border border-feedback-dor/25 mb-4">
@@ -38,7 +38,7 @@ export default function PainPoints({ lang }: PainPointsProps) {
           {t.items.map((item, i) => (
             <div
               key={i}
-              className="bg-white rounded-2xl p-8 border-l-4 border-feedback-dor shadow-card hover:-translate-y-1 hover:shadow-[0_16px_48px_rgba(61,58,58,0.15)] transition-all duration-300 relative overflow-hidden"
+              className="bg-white rounded-2xl p-6 md:p-8 border-l-4 border-feedback-dor shadow-card hover:-translate-y-1 hover:shadow-[0_16px_48px_rgba(61,58,58,0.15)] transition-all duration-300 relative overflow-hidden"
             >
               <div
                 aria-hidden="true"

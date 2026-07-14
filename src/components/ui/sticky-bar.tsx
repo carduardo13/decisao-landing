@@ -30,7 +30,7 @@ export default function StickyBar({ lang, checkoutUrl }: StickyBarProps) {
     <div
       role="complementary"
       aria-label="Oferta fixada"
-      className={`fixed bottom-0 left-0 right-0 z-[100] bg-neutral-text border-t-2 border-brand-gold flex items-center justify-center gap-5 px-6 py-3.5 transition-transform duration-400 ${
+      className={`fixed bottom-0 left-0 right-0 z-40 bg-neutral-text border-t-2 border-brand-gold flex items-center justify-center gap-5 px-4 md:px-6 py-3.5 transition-transform duration-400 ${
         isVisible ? 'translate-y-0' : 'translate-y-full'
       }`}
     >

@@ -19,14 +19,14 @@ export default function CtaSection({ lang, checkoutUrl }: CtaSectionProps) {
     <section
       id="checkout"
       aria-labelledby="cta-heading"
-      className="relative py-24 bg-gradient-to-b from-neutral-text to-[#2a2626] text-center overflow-hidden"
+      className="relative py-16 md:py-24 bg-[#141414] text-center overflow-hidden"
     >
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_50%_0%,rgba(212,175,55,0.12),transparent)]"
       />
 
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-4 md:px-8 relative z-10">
         {/* Header */}
         <div className="mb-12">
           <span className="inline-block px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest bg-gradient-to-r from-brand-gold to-brand-gold-light text-neutral-text mb-4">

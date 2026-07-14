@@ -73,7 +73,7 @@ export default function LanguageSelector({ lang, onLangChange }: LanguageSelecto
         <ul
           role="listbox"
           aria-label="Selecionar idioma"
-          className="absolute right-0 mt-2 w-40 bg-neutral-bg border border-brand-gold/25 rounded-xl shadow-[0_8px_32px_rgba(0,0,0,0.18)] overflow-hidden z-[200] animate-fade-in"
+          className="absolute right-0 mt-2 w-40 bg-neutral-bg border border-brand-gold/25 rounded-xl shadow-[0_8px_32px_rgba(0,0,0,0.18)] overflow-hidden z-[60] animate-fade-in"
         >
           {LANGS.map(({ lang: l, flag, fullName }) => {
             const isActive = l === lang;

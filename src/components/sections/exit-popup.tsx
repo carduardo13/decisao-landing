@@ -86,9 +86,9 @@ export default function ExitPopup({ lang, discountUrl }: ExitPopupProps) {
 
   return (
     <>
-      <div aria-hidden="true" onClick={closePopup} className="fixed inset-0 z-[998] bg-black/60 backdrop-blur-sm animate-fade-in" />
+      <div aria-hidden="true" onClick={closePopup} className="fixed inset-0 z-[100] bg-black/60 backdrop-blur-sm animate-fade-in" />
 
-      <div role="dialog" aria-modal="true" aria-labelledby="exit-popup-title" aria-describedby="exit-popup-desc" className="fixed inset-0 z-[999] flex items-center justify-center p-4">
+      <div role="dialog" aria-modal="true" aria-labelledby="exit-popup-title" aria-describedby="exit-popup-desc" className="fixed inset-0 z-[110] flex items-center justify-center p-4">
         <div className="relative w-full max-w-md bg-neutral-bg border-2 border-brand-gold rounded-3xl shadow-[0_24px_80px_rgba(0,0,0,0.35)] animate-slide-up overflow-hidden">
 
           <div className="h-1.5 w-full bg-gradient-to-r from-brand-gold via-brand-gold-light to-brand-gold" />

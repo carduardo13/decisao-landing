@@ -26,14 +26,14 @@ export default function Hero({ lang, checkoutUrl }: HeroProps) {
     <section
       id="hero"
       aria-labelledby="hero-heading"
-      className="relative pt-20 pb-16 text-center overflow-hidden"
+      className="relative pt-16 md:pt-24 pb-12 md:pb-20 text-center overflow-hidden"
     >
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_50%_0%,rgba(247,214,205,0.45),transparent)]"
       />
 
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-4 md:px-8 relative z-10">
         {/* Badge */}
         <div className="mb-5">
           <span className="inline-block px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest bg-brand-warm/20 text-feedback-dor-dark border border-brand-warm/40">

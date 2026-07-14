@@ -40,9 +40,9 @@ export default function BookPreview({ lang, checkoutUrl }: BookPreviewProps) {
     <section
       id="preview"
       aria-labelledby="preview-heading"
-      className="py-20 bg-neutral-bg"
+      className="py-12 md:py-20 bg-neutral-bg"
     >
-      <div className="max-w-3xl mx-auto px-6">
+      <div className="max-w-3xl mx-auto px-4 md:px-8">
         {/* Header */}
         <div className="text-center mb-12">
           <span className="inline-block px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest bg-gradient-to-r from-brand-gold to-brand-gold-light text-neutral-text mb-4">
@@ -89,7 +89,7 @@ export default function BookPreview({ lang, checkoutUrl }: BookPreviewProps) {
           </div>
 
           {/* Content */}
-          <div className="p-10 md:p-14 font-serif text-base leading-[1.85] text-neutral-text min-h-[420px]">
+          <div className="p-6 md:p-14 font-serif text-base leading-[1.85] text-neutral-text min-h-[420px]">
             {t.pages.map((page, i) => (
               <div
                 key={i}

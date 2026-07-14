@@ -36,7 +36,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className={`${playfair.variable} ${jakarta.variable} antialiased`}>
+      <body className={`${playfair.variable} ${jakarta.variable} antialiased overflow-x-hidden`}>
         {children}
       </body>
     </html>

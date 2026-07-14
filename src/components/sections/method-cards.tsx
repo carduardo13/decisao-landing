@@ -18,9 +18,9 @@ export default function MethodCards({ lang }: MethodCardsProps) {
     <section
       id="metodo"
       aria-labelledby="method-heading"
-      className="py-20 bg-neutral-bg"
+      className="py-12 md:py-20 bg-neutral-bg"
     >
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-4 md:px-8">
         {/* Header */}
         <div className="text-center max-w-xl mx-auto mb-14">
           <span className="inline-block px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest bg-gradient-to-r from-brand-gold to-brand-gold-light text-neutral-text mb-4">
@@ -40,7 +40,7 @@ export default function MethodCards({ lang }: MethodCardsProps) {
           {t.steps.map((step, i) => (
             <div
               key={i}
-              className={`bg-white rounded-2xl p-7 shadow-soft border-t-[3px] border-brand-gold group hover:-translate-y-1 hover:shadow-card transition-all duration-300 relative overflow-hidden ${
+              className={`bg-white rounded-2xl p-6 md:p-8 shadow-soft border-t-[3px] border-brand-gold group hover:-translate-y-1 hover:shadow-card transition-all duration-300 relative overflow-hidden ${
                 'fullWidth' in step && step.fullWidth ? 'md:col-span-2 lg:col-span-4 max-w-md mx-auto w-full' : ''
               }`}
             >

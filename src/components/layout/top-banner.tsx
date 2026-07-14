@@ -15,7 +15,7 @@ export default function TopBanner({ lang }: TopBannerProps) {
   return (
     <div
       role="banner"
-      className="bg-gradient-to-r from-feedback-dor-dark via-feedback-dor to-[#C4302B] text-white text-center py-2.5 px-5 text-sm font-semibold tracking-wide"
+      className="bg-gradient-to-r from-feedback-dor-dark via-feedback-dor to-[#C4302B] text-white text-center py-2 sm:py-2.5 px-4 text-xs sm:text-sm font-semibold tracking-wide leading-snug"
     >
       {t.text}{' '}
       <span className="text-brand-gold-light">{t.highlight}</span>{' '}

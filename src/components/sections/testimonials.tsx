@@ -17,9 +17,9 @@ export default function Testimonials({ lang }: TestimonialsProps) {
     <section
       id="depoimentos"
       aria-labelledby="testimonials-heading"
-      className="py-20 bg-brand-light"
+      className="py-12 md:py-20 bg-brand-light"
     >
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-4 md:px-8">
         <div className="text-center mb-11">
           <span className="inline-block px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest bg-brand-warm/20 text-feedback-dor-dark border border-brand-warm/40 mb-4">
             {t.badge}
@@ -30,9 +30,9 @@ export default function Testimonials({ lang }: TestimonialsProps) {
           <p className="text-sm text-neutral-muted mt-3 font-medium">{t.social}</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {t.items.map((item, i) => (
-            <div key={i} className="bg-white rounded-2xl p-7 shadow-soft relative hover:-translate-y-1 hover:shadow-card transition-all duration-300">
+            <div key={i} className="bg-white rounded-2xl p-6 md:p-8 shadow-soft relative hover:-translate-y-1 hover:shadow-card transition-all duration-300">
               <span
                 aria-hidden="true"
                 className="absolute top-2 left-5 font-serif text-[5rem] leading-none text-brand-light pointer-events-none select-none"

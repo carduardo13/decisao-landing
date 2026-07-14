@@ -25,14 +25,14 @@ export default function ScienceCycle({ lang }: ScienceCycleProps) {
     <section
       id="ciencia"
       aria-labelledby="science-heading"
-      className="relative py-24 bg-neutral-text overflow-hidden"
+      className="relative py-16 md:py-24 bg-neutral-text overflow-hidden"
     >
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_70%_50%_at_50%_50%,rgba(163,29,29,0.25),transparent)]"
       />
 
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-4 md:px-8 relative z-10">
         {/* Header */}
         <div className="text-center mb-12">
           <span className="inline-block px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest bg-gradient-to-r from-brand-gold to-brand-gold-light text-neutral-text mb-4">
@@ -45,7 +45,7 @@ export default function ScienceCycle({ lang }: ScienceCycleProps) {
         </div>
 
         {/* Callout */}
-        <div className="max-w-2xl mx-auto mb-14 bg-white/5 border border-brand-gold/30 rounded-3xl p-10 backdrop-blur-sm text-center">
+        <div className="max-w-2xl mx-auto mb-14 bg-white/5 border border-brand-gold/30 rounded-3xl p-6 md:p-10 backdrop-blur-sm text-center">
           <blockquote className="font-serif text-xl md:text-2xl text-white italic leading-relaxed mb-4">
             &ldquo;{t.quote}{' '}
             <strong className="text-brand-warm not-italic">{t.quoteStrong}</strong>{' '}

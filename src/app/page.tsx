@@ -58,8 +58,8 @@ export default function Home() {
   const [lang, setLang] = useState<Lang>('es');
 
   // URLs por idioma
-  const checkoutUrl = CHECKOUT[lang].full;
-  const discountUrl = CHECKOUT[lang].discount;
+  const checkoutUrl = CHECKOUT[lang]?.full ?? '#';
+  const discountUrl = CHECKOUT[lang]?.discount ?? '#';
 
   return (
     <>
@@ -70,7 +70,7 @@ export default function Home() {
       <Navbar lang={lang} onLangChange={setLang} checkoutUrl={checkoutUrl} />
 
       {/* ── Conteúdo principal ────────────────────────── */}
-      <main id="main-content">
+      <main id="main-content" className="overflow-x-hidden">
 
         {/* Seção 1: Hero + VSL */}
         <Hero lang={lang} checkoutUrl={checkoutUrl} />

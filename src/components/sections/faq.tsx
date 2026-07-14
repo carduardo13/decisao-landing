@@ -18,8 +18,8 @@ export default function Faq({ lang }: FaqProps) {
   const toggle = (i: number) => setOpenIndex(openIndex === i ? null : i);
 
   return (
-    <section id="faq" aria-labelledby="faq-heading" className="py-20 bg-neutral-bg">
-      <div className="container mx-auto px-6">
+    <section id="faq" aria-labelledby="faq-heading" className="py-12 md:py-20 bg-neutral-bg">
+      <div className="container mx-auto px-4 md:px-8">
         <div className="text-center mb-11">
           <span className="inline-block px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest bg-brand-warm/20 text-feedback-dor-dark border border-brand-warm/40 mb-4">
             {t.badge}
