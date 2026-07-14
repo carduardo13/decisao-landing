@@ -59,13 +59,18 @@ export default function ExitPopup({ lang, discountUrl }: ExitPopupProps) {
         resetInactivityTimer();
       }
     };
+    const handleVisibilityChange = () => {
+      if (document.visibilityState === 'hidden') showPopup();
+    };
     document.addEventListener('mouseenter', handleMouseEnter);
     document.addEventListener('mouseleave', handleMouseLeave);
     window.addEventListener('scroll', handleScroll, { passive: true });
+    document.addEventListener('visibilitychange', handleVisibilityChange);
     return () => {
       document.removeEventListener('mouseenter', handleMouseEnter);
       document.removeEventListener('mouseleave', handleMouseLeave);
       window.removeEventListener('scroll', handleScroll);
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
       if (inactivityTimerRef.current) clearTimeout(inactivityTimerRef.current);
     };
   }, [showPopup, resetInactivityTimer]);
@@ -123,7 +128,7 @@ export default function ExitPopup({ lang, discountUrl }: ExitPopupProps) {
               target="_blank"
               rel="noopener noreferrer"
               onClick={closePopup}
-              className="block w-full py-4 px-6 rounded-full font-extrabold text-sm uppercase tracking-wide text-white bg-gradient-to-br from-feedback-dor to-feedback-dor-dark shadow-cta transition-all hover:-translate-y-0.5 hover:shadow-[0_16px_40px_rgba(163,29,29,0.5)] mb-4 text-center"
+              className="block w-full py-4 px-6 rounded-lg font-extrabold text-sm uppercase tracking-wide text-white bg-[#A31D1D] hover:bg-[#7A1212] shadow-lg shadow-red-900/30 transition-all transform hover:scale-105 mb-4 text-center"
             >
               {t.cta}
             </a>

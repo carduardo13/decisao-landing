@@ -36,8 +36,8 @@ export const translations = {
       vslLabel: 'Assista ao vídeo —',
       vslDuration: 'Duração: 08:24',
       vslPlaceholder: 'Cole aqui o iframe do Panda Video / Vimeo / YouTube',
-      cta: '🔓 QUERO PARAR DE ME ABANDONAR AGORA',
-      trustBadge: 'Ambiente 100% seguro · Acesso imediato · Garantia de 7 dias',
+      cta: '🔓 QUERO ACESSAR O MÉTODO D.E.C.I.S.Ã.O. AGORA',
+      trustBadge: '🔒 Ambiente 100% seguro · Acesso imediato · Garantia de 7 dias',
     },
     painPoints: {
       badge: 'Diagnóstico',
@@ -152,6 +152,8 @@ export const translations = {
     testimonials: {
       badge: '💬 Depoimentos',
       heading: 'Quem já tomou a Decisão',
+      social: '+2.800 pessoas que transformaram seus padrões afetivos',
+      verified: 'Compra Verificada',
       items: [
         { text: '"Eu chorei no primeiro capítulo. Não por tristeza — por reconhecimento. Finalmente alguém nomeou o que eu vivia há anos sem conseguir explicar. O método funcionou de verdade."', name: 'Mariana S.', role: '32 anos · São Paulo', initial: 'M', gradient: 'from-brand-warm to-feedback-dor' },
         { text: '"Comprei com ceticismo. Li em dois dias. Em três semanas fiz coisas que nunca tinha conseguido — estabeleci limites reais, parei de responder mensagens por ansiedade. Isso mudou minha vida."', name: 'Rodrigo A.', role: '28 anos · Belo Horizonte', initial: 'R', gradient: 'from-brand-gold to-feedback-dor' },
@@ -175,9 +177,18 @@ export const translations = {
       ],
       finalQuote: 'A decisão mais importante',
       finalQuoteStrong: 'é esta.',
-      cta: '🔓 QUERO PARAR DE ME ABANDONAR AGORA',
-      trustBadge: 'Acesso imediato ao E-book · Exercícios Práticos · [Opcional] Audiobook · Garantia incondicional de 7 dias',
+      cta: '🔓 QUERO ACESSAR O MÉTODO D.E.C.I.S.Ã.O. AGORA',
+      trustBadge: '🔒 Acesso imediato ao E-book · Exercícios Práticos · [Opcional] Audiobook · Garantia incondicional de 7 dias',
       guarantee: 'Garantia Incondicional de 7 dias — Se não gostar, devolvemos 100% do seu dinheiro. Sem perguntas.',
+      offerStackTitle: '🎁 O Que Você Recebe Hoje',
+      offerStackItems: [
+        'E-book Completo "Decisão" — PDF (197 páginas)',
+        'Exercícios Práticos por Capítulo',
+        'Acesso Imediato via e-mail',
+        'Audiobook Narrado em MP3 (upgrade opcional)',
+      ],
+      offerGuaranteeTitle: 'Garantia Incondicional de 7 Dias',
+      offerGuaranteeSub: 'Devolvemos 100% do seu dinheiro — Sem perguntas.',
     },
     faq: {
       badge: 'Dúvidas?',
@@ -240,8 +251,8 @@ export const translations = {
       vslLabel: 'Watch the video —',
       vslDuration: 'Duration: 08:24',
       vslPlaceholder: 'Paste your Panda Video / Vimeo / YouTube iframe here',
-      cta: '🔓 I WANT TO STOP ABANDONING MYSELF NOW',
-      trustBadge: '100% secure environment · Instant access · 7-day guarantee',
+      cta: '🔓 ACCESS THE D.E.C.I.S.I.O.N. METHOD NOW',
+      trustBadge: '🔒 100% secure environment · Instant access · 7-day guarantee',
     },
     painPoints: {
       badge: 'Diagnosis',
@@ -340,6 +351,8 @@ export const translations = {
     testimonials: {
       badge: '💬 Testimonials',
       heading: 'Who Already Made the Decision',
+      social: '+2,800 people who transformed their emotional patterns',
+      verified: 'Verified Purchase',
       items: [
         { text: '"I cried in the first chapter. Not from sadness — from recognition. Someone finally named what I had been living for years without being able to explain it. The method truly worked."', name: 'Mariana S.', role: '32 years old · São Paulo', initial: 'M', gradient: 'from-brand-warm to-feedback-dor' },
         { text: '"I bought it skeptically. Read it in two days. In three weeks I did things I had never managed before — set real limits, stopped replying to messages out of anxiety. This changed my life."', name: 'Rodrigo A.', role: '28 years old · Belo Horizonte', initial: 'R', gradient: 'from-brand-gold to-feedback-dor' },
@@ -363,9 +376,18 @@ export const translations = {
       ],
       finalQuote: 'The most important decision',
       finalQuoteStrong: 'is this one.',
-      cta: '🔓 I WANT TO STOP ABANDONING MYSELF NOW',
-      trustBadge: 'Instant access to the E-book · Practical Exercises · [Optional] Audiobook · Unconditional 7-day guarantee',
+      cta: '🔓 ACCESS THE D.E.C.I.S.I.O.N. METHOD NOW',
+      trustBadge: '🔒 Instant access to the E-book · Practical Exercises · [Optional] Audiobook · Unconditional 7-day guarantee',
       guarantee: 'Unconditional 7-Day Guarantee — If you\'re not satisfied, we refund 100% of your money. No questions asked.',
+      offerStackTitle: '🎁 What You Get Today',
+      offerStackItems: [
+        'Complete E-book "Decision" — PDF (197 pages)',
+        'Practical Exercises per Chapter',
+        'Instant Access via Email',
+        'Narrated Audiobook in MP3 (optional upgrade)',
+      ],
+      offerGuaranteeTitle: 'Unconditional 7-Day Guarantee',
+      offerGuaranteeSub: 'We refund 100% of your money — No questions asked.',
     },
     faq: {
       badge: 'Questions?',
@@ -428,8 +450,8 @@ export const translations = {
       vslLabel: 'Mira el video —',
       vslDuration: 'Duración: 08:24',
       vslPlaceholder: 'Pega aquí el iframe de Panda Video / Vimeo / YouTube',
-      cta: '🔓 QUIERO DEJAR DE ABANDONARME AHORA',
-      trustBadge: 'Entorno 100% seguro · Acceso inmediato · Garantía de 7 días',
+      cta: '🔓 QUIERO ACCEDER AL MÉTODO D.E.C.I.S.I.Ó.N. AHORA',
+      trustBadge: '🔒 Entorno 100% seguro · Acceso inmediato · Garantía de 7 días',
     },
     painPoints: {
       badge: 'Diagnóstico',
@@ -528,6 +550,8 @@ export const translations = {
     testimonials: {
       badge: '💬 Testimonios',
       heading: 'Quienes ya tomaron la Decisión',
+      social: '+2.800 personas que transformaron sus patrones afectivos',
+      verified: 'Compra Verificada',
       items: [
         { text: '"Lloré en el primer capítulo. No de tristeza — de reconocimiento. Finalmente alguien nombró lo que había vivido durante años sin poder explicarlo. El método funcionó de verdad."', name: 'Mariana S.', role: '32 años · São Paulo', initial: 'M', gradient: 'from-brand-warm to-feedback-dor' },
         { text: '"Lo compré con escepticismo. Lo leí en dos días. En tres semanas hice cosas que nunca había logrado — establecí límites reales, dejé de responder mensajes por ansiedad. Esto cambió mi vida."', name: 'Rodrigo A.', role: '28 años · Belo Horizonte', initial: 'R', gradient: 'from-brand-gold to-feedback-dor' },
@@ -551,9 +575,18 @@ export const translations = {
       ],
       finalQuote: 'La decisión más importante',
       finalQuoteStrong: 'es esta.',
-      cta: '🔓 QUIERO DEJAR DE ABANDONARME AHORA',
-      trustBadge: 'Acceso inmediato al E-book · Ejercicios Prácticos · [Opcional] Audiolibro · Garantía incondicional de 7 días',
+      cta: '🔓 QUIERO ACCEDER AL MÉTODO D.E.C.I.S.I.Ó.N. AHORA',
+      trustBadge: '🔒 Acceso inmediato al E-book · Ejercicios Prácticos · [Opcional] Audiolibro · Garantía incondicional de 7 días',
       guarantee: 'Garantía Incondicional de 7 días — Si no te gusta, devolvemos el 100% de tu dinero. Sin preguntas.',
+      offerStackTitle: '🎁 Lo Que Recibes Hoy',
+      offerStackItems: [
+        'E-book Completo "Decisión" — PDF (197 páginas)',
+        'Ejercicios Prácticos por Capítulo',
+        'Acceso Inmediato vía e-mail',
+        'Audiolibro Narrado en MP3 (mejora opcional)',
+      ],
+      offerGuaranteeTitle: 'Garantía Incondicional de 7 Días',
+      offerGuaranteeSub: 'Devolvemos el 100% de tu dinero — Sin preguntas.',
     },
     faq: {
       badge: '¿Dudas?',

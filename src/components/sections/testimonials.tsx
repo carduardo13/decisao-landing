@@ -27,19 +27,27 @@ export default function Testimonials({ lang }: TestimonialsProps) {
           <h2 id="testimonials-heading" className="font-serif text-3xl font-bold">
             {t.heading}
           </h2>
+          <p className="text-sm text-neutral-muted mt-3 font-medium">{t.social}</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {t.items.map((item, i) => (
-            <div key={i} className="bg-white rounded-2xl p-7 shadow-soft relative">
+            <div key={i} className="bg-white rounded-2xl p-7 shadow-soft relative hover:-translate-y-1 hover:shadow-card transition-all duration-300">
               <span
                 aria-hidden="true"
                 className="absolute top-2 left-5 font-serif text-[5rem] leading-none text-brand-light pointer-events-none select-none"
               >
                 &ldquo;
               </span>
-              <div className="text-brand-gold text-sm mb-3" aria-label="5 estrelas">★★★★★</div>
-              <p className="text-sm text-neutral-muted italic leading-relaxed mb-4 pt-6">{item.text}</p>
+              {/* Verified badge */}
+              <span className="inline-flex items-center gap-1.5 text-[10px] font-semibold uppercase tracking-wider text-green-700 bg-green-50 border border-green-200 rounded-full px-2.5 py-0.5 mb-3">
+                <svg width="8" height="6" viewBox="0 0 10 8" fill="none" aria-hidden="true">
+                  <path d="M1 4l3 3 5-5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+                {t.verified}
+              </span>
+              <div className="text-yellow-400 text-base mb-3" aria-label="5 estrelas">★★★★★</div>
+              <p className="text-sm text-neutral-muted italic leading-relaxed mb-4 pt-4">{item.text}</p>
               <div className="flex items-center gap-3">
                 <div
                   aria-hidden="true"

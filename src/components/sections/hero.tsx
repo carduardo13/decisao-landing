@@ -99,7 +99,7 @@ export default function Hero({ lang, checkoutUrl }: HeroProps) {
           <a
             href={checkoutUrl}
             id="hero-cta-btn"
-            className="inline-block px-12 py-5 rounded-full font-extrabold text-base uppercase tracking-wide text-white bg-gradient-to-br from-feedback-dor to-feedback-dor-dark shadow-cta animate-pulse-cta transition-all hover:-translate-y-1 hover:scale-[1.02] hover:shadow-[0_16px_48px_rgba(163,29,29,0.5)]"
+            className="inline-block px-10 py-5 rounded-lg font-extrabold text-base uppercase tracking-wide text-white bg-[#A31D1D] hover:bg-[#7A1212] shadow-lg shadow-red-900/30 transition-all transform hover:scale-105 active:scale-100 animate-pulse-cta"
           >
             {t.cta}
           </a>
