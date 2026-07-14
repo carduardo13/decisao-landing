@@ -62,7 +62,7 @@ function KintsugiDivider() {
 // ─── Main Page ────────────────────────────────────────
 export default function Home() {
   // Estado 1 — idioma ativo
-  const [lang, setLang] = useState<Lang>('pt');
+  const [lang, setLang] = useState<Lang>('es');
 
   // Estado 2 — audiobook order bump
   const [isAudiobookSelected, setIsAudiobookSelected] = useState(false);
