@@ -327,9 +327,9 @@ export const translations = {
       social: '+2,800 people who transformed their emotional patterns',
       verified: 'Verified Purchase',
       items: [
-        { text: '"I cried in the first chapter. Not from sadness — from recognition. Someone finally named what I had been living for years without being able to explain it. The method truly worked."', name: 'Mariana S.', role: '32 years old · São Paulo', initial: 'M', gradient: 'from-brand-warm to-feedback-dor' },
-        { text: '"I bought it skeptically. Read it in two days. In three weeks I did things I had never managed before — set real limits, stopped replying to messages out of anxiety. This changed my life."', name: 'Rodrigo A.', role: '28 years old · Belo Horizonte', initial: 'R', gradient: 'from-brand-gold to-feedback-dor' },
-        { text: '"The part about intermittent reinforcement made me understand why I always went back to him. It was addiction, not love. That clarity was worth every penny. I recommend it to everyone."', name: 'Camila P.', role: '37 years old · Florianópolis', initial: 'C', gradient: 'from-brand-warm to-brand-gold' },
+        { text: '"I cried in the first chapter. Not from sadness — from recognition. Someone finally named what I had been living for years without being able to explain it. The method truly worked."', name: 'Mariana S.', role: '32 years old · New York - NY', initial: 'M', gradient: 'from-brand-warm to-feedback-dor' },
+        { text: '"I bought it skeptically. Read it in two days. In three weeks I did things I had never managed before — set real limits, stopped replying to messages out of anxiety. This changed my life."', name: 'Rodrigo A.', role: '28 years old · Austin - TX', initial: 'R', gradient: 'from-brand-gold to-feedback-dor' },
+        { text: '"The part about intermittent reinforcement made me understand why I always went back to him. It was addiction, not love. That clarity was worth every penny. I recommend it to everyone."', name: 'Camila P.', role: '37 years old · Miami - FL', initial: 'C', gradient: 'from-brand-warm to-brand-gold' },
       ],
     },
     ctaSection: {
@@ -503,9 +503,9 @@ export const translations = {
       social: '+2.800 personas que transformaron sus patrones afectivos',
       verified: 'Compra Verificada',
       items: [
-        { text: '"Lloré en el primer capítulo. No de tristeza — de reconocimiento. Finalmente alguien nombró lo que había vivido durante años sin poder explicarlo. El método funcionó de verdad."', name: 'Mariana S.', role: '32 años · São Paulo', initial: 'M', gradient: 'from-brand-warm to-feedback-dor' },
-        { text: '"Lo compré con escepticismo. Lo leí en dos días. En tres semanas hice cosas que nunca había logrado — establecí límites reales, dejé de responder mensajes por ansiedad. Esto cambió mi vida."', name: 'Rodrigo A.', role: '28 años · Belo Horizonte', initial: 'R', gradient: 'from-brand-gold to-feedback-dor' },
-        { text: '"La parte sobre el refuerzo intermitente me hizo entender por qué siempre volvía a él. Era adicción, no amor. Esa claridad valió cada centavo. Lo recomiendo a cualquier persona."', name: 'Camila P.', role: '37 años · Florianópolis', initial: 'C', gradient: 'from-brand-warm to-brand-gold' },
+        { text: '"Lloré en el primer capítulo. No de tristeza — de reconocimiento. Finalmente alguien nombró lo que había vivido durante años sin poder explicarlo. El método funcionó de verdad."', name: 'Mariana S.', role: '32 años · Ciudad de México - México', initial: 'M', gradient: 'from-brand-warm to-feedback-dor' },
+        { text: '"Lo compré con escepticismo. Lo leí en dos días. En tres semanas hice cosas que nunca había logrado — establecí límites reales, dejé de responder mensajes por ansiedad. Esto cambió mi vida."', name: 'Rodrigo A.', role: '28 años · Bogotá - Colombia', initial: 'R', gradient: 'from-brand-gold to-feedback-dor' },
+        { text: '"La parte sobre el refuerzo intermitente me hizo entender por qué siempre volvía a él. Era adicción, no amor. Esa claridad valió cada centavo. Lo recomiendo a cualquier persona."', name: 'Camila P.', role: '37 años · Buenos Aires - Argentina', initial: 'C', gradient: 'from-brand-warm to-brand-gold' },
       ],
     },
     ctaSection: {
