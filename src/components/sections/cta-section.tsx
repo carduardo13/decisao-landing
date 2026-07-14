@@ -72,30 +72,19 @@ export default function CtaSection({ lang, checkoutUrl }: CtaSectionProps) {
             {t.offerStackTitle}
           </p>
 
-          {/* Product mockups */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
-            <div className="flex items-center gap-3 bg-white/5 rounded-xl p-4 flex-1">
-              <div className="w-10 h-14 bg-gradient-to-br from-feedback-dor to-feedback-dor-dark rounded-md flex items-center justify-center flex-shrink-0 shadow-lg">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" aria-hidden="true">
+          {/* Product mockup — E-book only */}
+          <div className="flex justify-center mb-6">
+            <div className="flex items-center gap-4 bg-white/5 rounded-xl p-5 max-w-xs w-full">
+              <div className="w-12 h-16 bg-gradient-to-br from-feedback-dor to-feedback-dor-dark rounded-md flex items-center justify-center flex-shrink-0 shadow-lg">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" aria-hidden="true">
                   <path d="M4 19.5A2.5 2.5 0 016.5 17H20"/>
                   <path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/>
                 </svg>
               </div>
               <div>
                 <p className="text-white font-bold text-sm">E-book</p>
-                <p className="text-white/50 text-xs">PDF · 197 pág.</p>
-              </div>
-            </div>
-            <div className="flex items-center gap-3 bg-white/5 rounded-xl p-4 flex-1">
-              <div className="w-10 h-14 bg-gradient-to-br from-brand-gold to-brand-gold-light rounded-md flex items-center justify-center flex-shrink-0 shadow-lg">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2a2626" strokeWidth="2" aria-hidden="true">
-                  <path d="M3 18v-6a9 9 0 0118 0v6"/>
-                  <path d="M21 19a2 2 0 01-2 2h-1a2 2 0 01-2-2v-3a2 2 0 012-2h3zM3 19a2 2 0 002 2h1a2 2 0 002-2v-3a2 2 0 00-2-2H3z"/>
-                </svg>
-              </div>
-              <div>
-                <p className="text-white font-bold text-sm">Audiobook</p>
-                <p className="text-white/50 text-xs">MP3 · Opcional</p>
+                <p className="text-white/50 text-xs">PDF · 61 pág.</p>
+                <p className="text-green-400/80 text-xs mt-0.5">✓ Acesso imediato</p>
               </div>
             </div>
           </div>
