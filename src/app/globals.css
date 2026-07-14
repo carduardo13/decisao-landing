@@ -1,0 +1,143 @@
+@import "tailwindcss";
+
+/* =====================================================
+   TAILWIND v4 — DESIGN SYSTEM TOKENS via @theme
+   Estes tokens ficam disponíveis como utilitários CSS:
+   bg-brand-warm, text-feedback-dor, etc.
+===================================================== */
+@theme {
+  /* ── Cores da Marca ── */
+  --color-brand-warm:       #EAA899;
+  --color-brand-light:      #F7D6CD;
+  --color-brand-gold:       #D4AF37;
+  --color-brand-gold-light: #F0DC82;
+
+  /* ── Cores de Feedback (Dor/Urgência) ── */
+  --color-feedback-dor:      #A31D1D;
+  --color-feedback-dor-dark: #7A1212;
+
+  /* ── Neutros ── */
+  --color-neutral-bg:   #FDF8F6;
+  --color-neutral-text: #3D3A3A;
+  --color-neutral-muted:#756F6F;
+
+  /* ── Tipografia ── */
+  --font-serif: var(--font-playfair, "Playfair Display", Georgia, serif);
+  --font-sans:  var(--font-jakarta, "Plus Jakarta Sans", system-ui, sans-serif);
+
+  /* ── Sombras customizadas ── */
+  --shadow-soft: 0 4px 24px rgba(61,58,58,0.08);
+  --shadow-card: 0 8px 32px rgba(61,58,58,0.12);
+  --shadow-cta:  0 8px 40px rgba(163,29,29,0.35);
+  --shadow-gold: 0 4px 20px rgba(212,175,55,0.35);
+
+  /* ── Animações ── */
+  --animate-pulse-cta:  pulse-cta 2.8s ease-in-out infinite;
+  --animate-pulse-gold: pulse-gold 2.8s ease-in-out infinite;
+  --animate-pulse-play: pulse-play 2.5s ease-in-out infinite;
+  --animate-fade-in:    fade-in 0.4s ease forwards;
+  --animate-slide-up:   slide-up 0.5s cubic-bezier(0.4,0,0.2,1) forwards;
+  --animate-wave:       wave 1.2s ease-in-out infinite;
+}
+
+/* ── Keyframes ── */
+@keyframes pulse-cta {
+  0%, 100% { box-shadow: 0 8px 40px rgba(163,29,29,0.35); }
+  50%       { box-shadow: 0 8px 56px rgba(163,29,29,0.55); }
+}
+@keyframes pulse-gold {
+  0%, 100% { box-shadow: 0 4px 20px rgba(212,175,55,0.35); }
+  50%       { box-shadow: 0 8px 40px rgba(212,175,55,0.55); }
+}
+@keyframes pulse-play {
+  0%, 100% {
+    box-shadow: 0 0 0 16px rgba(163,29,29,0.15), 0 0 0 32px rgba(163,29,29,0.07);
+  }
+  50% {
+    box-shadow: 0 0 0 22px rgba(163,29,29,0.18), 0 0 0 40px rgba(163,29,29,0.05);
+  }
+}
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(32px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes wave {
+  0%, 100% { transform: scaleY(1);   opacity: 0.7; }
+  50%       { transform: scaleY(0.4); opacity: 1;   }
+}
+
+/* ── Base Styles ── */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-neutral-bg);
+    color: var(--color-neutral-text);
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-serif);
+    line-height: 1.25;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+/* ── Custom Utilities ── */
+@layer utilities {
+  /* Kintsugi decorative divider */
+  .kintsugi-divider {
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      var(--color-brand-gold),
+      var(--color-brand-gold-light),
+      var(--color-brand-gold),
+      transparent
+    );
+    opacity: 0.4;
+  }
+
+  /* Gold gradient text */
+  .text-gradient-gold {
+    background: linear-gradient(135deg, var(--color-brand-gold), var(--color-brand-gold-light));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Scroll-reveal animation helpers */
+  .animate-in-hidden {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .animate-in-hidden.in-view {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Waveform bar heights */
+  .waveform-bar-1  { height: 8px; }
+  .waveform-bar-2  { height: 18px; }
+  .waveform-bar-3  { height: 24px; }
+  .waveform-bar-4  { height: 14px; }
+  .waveform-bar-5  { height: 20px; }
+  .waveform-bar-6  { height: 10px; }
+  .waveform-bar-7  { height: 16px; }
+  .waveform-bar-8  { height: 22px; }
+  .waveform-bar-9  { height: 12px; }
+}
