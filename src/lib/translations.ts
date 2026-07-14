@@ -15,6 +15,10 @@ export const translations = {
   // PORTUGUÊS (PT-BR)
   // ══════════════════════════════════════════════════════════════════
   pt: {
+    meta: {
+      title: 'Decisão: Não Sofrer Mais Por Amor — O Método Definitivo',
+      description: 'O guia estratégico com o Método D.E.C.I.S.Ã.O. para reprogramar seu comportamento afetivo e romper o ciclo de dependência emocional definitivamente.',
+    },
     topBanner: {
       text: '⏳ Lançamento Especial —',
       highlight: 'Acesso Imediato + Garantia Incondicional de 7 dias',
@@ -217,6 +221,10 @@ export const translations = {
   // ENGLISH (EN)
   // ══════════════════════════════════════════════════════════════════
   en: {
+    meta: {
+      title: 'Decision: Stop Suffering for Love — The Definitive Method',
+      description: 'The strategic guide featuring the D.E.C.I.S.I.O.N. Method to reprogram your emotional behavior and permanently break the cycle of emotional dependency.',
+    },
     topBanner: {
       text: '⏳ Special Launch —',
       highlight: 'Instant Access + Unconditional 7-Day Guarantee',
@@ -403,6 +411,10 @@ export const translations = {
   // ESPAÑOL (ES)
   // ══════════════════════════════════════════════════════════════════
   es: {
+    meta: {
+      title: 'Decisión: Deja de Sufrir por Amor — El Método Definitivo',
+      description: 'La guía estratégica con el Método D.E.C.I.S.I.Ó.N. para reprogramar tu comportamiento afectivo y romper el ciclo de dependencia emocional definitivamente.',
+    },
     topBanner: {
       text: '⏳ Lanzamiento Especial —',
       highlight: 'Acceso Inmediato + Garantía Incondicional de 7 días',

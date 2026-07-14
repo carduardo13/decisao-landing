@@ -8,8 +8,8 @@
 // Nenhum componente filho tem texto hardcoded.
 // =========================================================
 
-import { useState } from 'react';
-import { type Lang } from '@/lib/translations';
+import { useState, useEffect } from 'react';
+import { translations, type Lang } from '@/lib/translations';
 
 // Layout
 import TopBanner    from '@/components/layout/top-banner';
@@ -56,6 +56,23 @@ function KintsugiDivider() {
 export default function Home() {
   // Estado — idioma ativo
   const [lang, setLang] = useState<Lang>('es');
+
+  // Atualiza SEO metadata na troca de idioma
+  useEffect(() => {
+    const metaData = translations[lang].meta;
+    if (metaData) {
+      document.title = metaData.title;
+      let metaDesc = document.querySelector('meta[name="description"]');
+      if (metaDesc) {
+        metaDesc.setAttribute("content", metaData.description);
+      } else {
+        metaDesc = document.createElement('meta');
+        metaDesc.setAttribute('name', 'description');
+        metaDesc.setAttribute('content', metaData.description);
+        document.head.appendChild(metaDesc);
+      }
+    }
+  }, [lang]);
 
   // URLs por idioma
   const checkoutUrl = CHECKOUT[lang]?.full ?? '#';

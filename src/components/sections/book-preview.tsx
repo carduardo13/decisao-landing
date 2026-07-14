@@ -124,7 +124,7 @@ export default function BookPreview({ lang, checkoutUrl }: BookPreviewProps) {
                       </p>
                       <a
                         href={checkoutUrl}
-                        className="inline-block px-8 py-4 rounded-full font-extrabold text-sm uppercase tracking-wide text-white bg-gradient-to-br from-feedback-dor to-feedback-dor-dark shadow-cta transition-all hover:-translate-y-0.5 hover:shadow-[0_16px_40px_rgba(163,29,29,0.5)]"
+                        className="inline-block px-4 md:px-8 py-4 w-full sm:w-auto text-center whitespace-normal rounded-full font-extrabold text-sm uppercase tracking-wide text-white bg-gradient-to-br from-feedback-dor to-feedback-dor-dark shadow-cta transition-all hover:-translate-y-0.5 hover:shadow-[0_16px_40px_rgba(163,29,29,0.5)]"
                       >
                         {(page.gate as any).cta}
                       </a>

@@ -42,7 +42,7 @@ export default function StickyBar({ lang, checkoutUrl }: StickyBarProps) {
       <a
         href={checkoutUrl}
         id="sticky-cta-btn"
-        className="whitespace-nowrap px-7 py-3 rounded-full font-extrabold text-xs uppercase tracking-wide text-white bg-gradient-to-br from-feedback-dor to-feedback-dor-dark shadow-cta transition-all hover:-translate-y-0.5"
+        className="whitespace-normal px-4 md:px-7 py-3 w-full sm:w-auto text-center rounded-full font-extrabold text-xs uppercase tracking-wide text-white bg-gradient-to-br from-feedback-dor to-feedback-dor-dark shadow-cta transition-all hover:-translate-y-0.5"
       >
         {t.cta}
       </a>

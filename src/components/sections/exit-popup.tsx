@@ -128,7 +128,7 @@ export default function ExitPopup({ lang, discountUrl }: ExitPopupProps) {
               target="_blank"
               rel="noopener noreferrer"
               onClick={closePopup}
-              className="block w-full py-4 px-6 rounded-lg font-extrabold text-sm uppercase tracking-wide text-white bg-[#A31D1D] hover:bg-[#7A1212] shadow-lg shadow-red-900/30 transition-all transform hover:scale-105 mb-4 text-center"
+              className="block w-full py-4 px-6 rounded-lg font-extrabold text-sm uppercase tracking-wide text-white bg-[#A31D1D] hover:bg-[#7A1212] shadow-lg shadow-red-900/30 transition-all transform hover:scale-105 mb-4 text-center whitespace-normal"
             >
               {t.cta}
             </a>
