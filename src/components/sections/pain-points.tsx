@@ -34,11 +34,11 @@ export default function PainPoints({ lang }: PainPointsProps) {
         </div>
 
         {/* Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
           {t.items.map((item, i) => (
             <div
               key={i}
-              className="bg-white rounded-2xl p-6 md:p-8 border-l-4 border-feedback-dor shadow-card hover:-translate-y-1 hover:shadow-[0_16px_48px_rgba(61,58,58,0.15)] transition-all duration-300 relative overflow-hidden"
+              className="flex flex-col h-full bg-white rounded-2xl p-6 md:p-8 border-l-4 border-feedback-dor shadow-card hover:-translate-y-1 hover:shadow-[0_16px_48px_rgba(61,58,58,0.15)] transition-all duration-300 relative overflow-hidden"
             >
               <div
                 aria-hidden="true"

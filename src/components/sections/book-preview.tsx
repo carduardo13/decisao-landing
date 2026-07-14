@@ -104,38 +104,32 @@ export default function BookPreview({ lang, checkoutUrl }: BookPreviewProps) {
 
                 {/* If page has a gate, render with blur and lock */}
                 {'gate' in page ? (
-                  <>
-                    <div className="relative">
+                  <div className="relative">
+                    <div className="blur-sm select-none pointer-events-none">
                       {page.paragraphs.map((p, pi) => renderParagraph(p as Paragraph, pi))}
-                      {/* Blur fade-out */}
-                      <div
-                        aria-hidden="true"
-                        className="absolute bottom-0 left-0 right-0 h-28 bg-gradient-to-b from-transparent to-white pointer-events-none"
-                      />
                     </div>
-
-                    <div className="mt-6 mx-0 p-8 rounded-2xl text-center border-2 border-brand-gold bg-gradient-to-br from-brand-gold/10 to-brand-light/30">
-                      <div className="text-3xl mb-3" aria-hidden="true">🔒</div>
-                      <h4 className="font-serif text-xl font-bold text-neutral-text mb-2">
-                        {(page.gate as any).heading}
-                      </h4>
-                      <p className="text-sm text-neutral-muted mb-5 leading-relaxed whitespace-pre-line">
-                        {(page.gate as any).subtext}
-                      </p>
-                      <a
-                        href={checkoutUrl}
-                        className="inline-block px-4 md:px-8 py-4 w-full sm:w-auto text-center whitespace-normal rounded-full font-extrabold text-sm uppercase tracking-wide text-white bg-gradient-to-br from-feedback-dor to-feedback-dor-dark shadow-cta transition-all hover:-translate-y-0.5 hover:shadow-[0_16px_40px_rgba(163,29,29,0.5)]"
-                      >
-                        {(page.gate as any).cta}
-                      </a>
+                    
+                    <div className="absolute bottom-0 left-0 w-full h-3/4 bg-gradient-to-t from-[#FDF8F6] to-transparent flex items-end justify-center pb-10">
+                      <div className="bg-white border-2 border-brand-gold shadow-lg rounded-2xl p-6 max-w-md w-full mx-4 text-center">
+                        <div className="text-3xl mb-3" aria-hidden="true">🔒</div>
+                        <h4 className="font-serif text-xl font-bold text-neutral-text mb-5">
+                          {(page.gate as any).heading}
+                        </h4>
+                        <a
+                          href={checkoutUrl}
+                          className="inline-block px-4 md:px-8 py-4 w-full sm:w-auto text-center whitespace-normal rounded-full font-extrabold text-sm uppercase tracking-wide text-white bg-[#A31D1D] hover:bg-[#7A1212] shadow-cta transition-all hover:-translate-y-0.5 hover:shadow-[0_16px_40px_rgba(163,29,29,0.5)]"
+                        >
+                          {(page.gate as any).cta}
+                        </a>
+                      </div>
                     </div>
-                  </>
+                  </div>
                 ) : (
                   <>
-                    {page.paragraphs.map((p, pi) => renderParagraph(p as Paragraph, pi))}
-                    {'pageLabel' in page && (
+                    {(page as any).paragraphs.map((p: any, pi: number) => renderParagraph(p as Paragraph, pi))}
+                    {'pageLabel' in (page as any) && (
                       <p className="text-right text-xs text-neutral-muted mt-6 font-sans">
-                        {(page as { pageLabel: string }).pageLabel}
+                        {((page as any) as { pageLabel: string }).pageLabel}
                       </p>
                     )}
                   </>

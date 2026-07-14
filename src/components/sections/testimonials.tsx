@@ -30,7 +30,7 @@ export default function Testimonials({ lang }: TestimonialsProps) {
           <p className="text-sm text-neutral-muted mt-3 font-medium">{t.social}</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
           {t.items.map((item, i) => (
             <div key={i} className="bg-white rounded-2xl p-6 md:p-8 shadow-soft hover:-translate-y-1 hover:shadow-card transition-all duration-300 h-full flex flex-col gap-4">
               <div className="flex items-start justify-between">
