@@ -55,7 +55,7 @@ export default function LanguageSelector({ lang, onLangChange }: LanguageSelecto
         aria-expanded={isOpen}
         aria-label={`Idioma atual: ${current.fullName}. Clique para mudar.`}
         id="language-selector-trigger"
-        className="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-semibold text-neutral-text bg-neutral-bg/80 border border-brand-gold/20 backdrop-blur-sm transition-all duration-200 hover:border-brand-gold/50 hover:bg-brand-gold/8 select-none"
+        className="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-semibold text-neutral-text bg-neutral-bg/80 border border-brand-gold/20 backdrop-blur-sm transition-all duration-200 hover:border-brand-gold/50 hover:bg-brand-gold/8 select-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold/50"
       >
         <span aria-hidden="true">{current.flag}</span>
         <span>{current.label}</span>
@@ -84,7 +84,7 @@ export default function LanguageSelector({ lang, onLangChange }: LanguageSelecto
                   aria-selected={isActive}
                   id={`lang-option-${l}`}
                   onClick={() => { onLangChange(l); setIsOpen(false); }}
-                  className={`w-full flex items-center gap-3 px-4 py-3 text-sm text-left transition-colors duration-150 ${
+                  className={`w-full flex items-center gap-3 px-4 py-3 text-sm text-left transition-colors duration-150 focus-visible:outline-none focus-visible:bg-brand-gold/10 ${
                     isActive
                       ? 'bg-brand-gold/12 text-neutral-text font-semibold'
                       : 'text-neutral-muted hover:bg-brand-gold/8 hover:text-neutral-text'
