@@ -19,11 +19,17 @@ export default function StickyBar({ lang, checkoutUrl }: StickyBarProps) {
   useEffect(() => {
     const heroEl = document.getElementById('hero');
     if (!heroEl) return;
-    const handleScroll = () => {
-      setIsVisible(heroEl.getBoundingClientRect().bottom < 0);
-    };
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsVisible(!entry.isIntersecting && entry.boundingClientRect.bottom < 0);
+      },
+      { threshold: 0 }
+    );
+
+    observer.observe(heroEl);
+
+    return () => observer.disconnect();
   }, []);
 
   return (
