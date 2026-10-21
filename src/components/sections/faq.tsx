@@ -35,7 +35,7 @@ export default function Faq({ lang }: FaqProps) {
                 aria-expanded={openIndex === i}
                 aria-controls={`faq-answer-${i}`}
                 id={`faq-btn-${i}`}
-                className="w-full flex items-center justify-between py-5 gap-4 text-left font-semibold text-sm text-neutral-text hover:text-neutral-text/80 transition-colors"
+                className="w-full flex items-center justify-between py-5 px-2 gap-4 text-left font-semibold text-sm text-neutral-text hover:text-neutral-text/80 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold/50 rounded-lg"
               >
                 <span>{faq.q}</span>
                 <span

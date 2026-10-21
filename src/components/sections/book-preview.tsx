@@ -70,7 +70,7 @@ export default function BookPreview({ lang, checkoutUrl }: BookPreviewProps) {
                 aria-controls={`reader-page-${i}`}
                 id={`reader-tab-${i}`}
                 onClick={() => setActiveTab(i)}
-                className={`flex-1 py-4 text-sm font-semibold tracking-wide transition-all border-b-[3px] -mb-px ${
+                className={`flex-1 py-4 text-sm font-semibold tracking-wide transition-all border-b-[3px] -mb-px focus-visible:outline-none focus-visible:bg-white/30 ${
                   activeTab === i
                     ? 'text-feedback-dor border-feedback-dor bg-white'
                     : 'text-neutral-muted border-transparent hover:bg-white/50 hover:text-neutral-text'
