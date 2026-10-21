@@ -30,19 +30,19 @@ export type CheckoutType = 'full' | 'combo' | 'discount';
 
 export const checkoutUrls: Record<Locale, Record<CheckoutType, string>> = {
   'pt-BR': {
-    full:     'https://pay.gateway.com/METODO_PT',
-    combo:    'https://pay.gateway.com/METODO_AUDIOBOOK_PT',
-    discount: 'https://pay.gateway.com/METODO_DESCONTO_5_PT',
+    full:     process.env.NEXT_PUBLIC_CHECKOUT_URL_PT_FULL || '#',
+    combo:    process.env.NEXT_PUBLIC_CHECKOUT_URL_PT_COMBO || '#',
+    discount: process.env.NEXT_PUBLIC_CHECKOUT_URL_PT_DISCOUNT || '#',
   },
   'en': {
-    full:     'https://pay.gateway.com/METODO_EN',
-    combo:    'https://pay.gateway.com/METODO_AUDIOBOOK_EN',
-    discount: 'https://pay.gateway.com/METODO_DESCONTO_5_EN',
+    full:     process.env.NEXT_PUBLIC_CHECKOUT_URL_EN_FULL || '#',
+    combo:    process.env.NEXT_PUBLIC_CHECKOUT_URL_EN_COMBO || '#',
+    discount: process.env.NEXT_PUBLIC_CHECKOUT_URL_EN_DISCOUNT || '#',
   },
   'es': {
-    full:     'https://pay.gateway.com/METODO_ES',
-    combo:    'https://pay.gateway.com/METODO_AUDIOBOOK_ES',
-    discount: 'https://pay.gateway.com/METODO_DESCONTO_5_ES',
+    full:     process.env.NEXT_PUBLIC_CHECKOUT_URL_ES_FULL || '#',
+    combo:    process.env.NEXT_PUBLIC_CHECKOUT_URL_ES_COMBO || '#',
+    discount: process.env.NEXT_PUBLIC_CHECKOUT_URL_ES_DISCOUNT || '#',
   },
 };
 

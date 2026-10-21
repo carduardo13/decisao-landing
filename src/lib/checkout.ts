@@ -7,11 +7,11 @@
 
 export const CHECKOUT_URLS = {
   /** Preço cheio — sem audiobook, sem desconto */
-  full: "https://pay.gateway.com/METODO_CHEIO",
+  full: process.env.NEXT_PUBLIC_CHECKOUT_URL_FULL || "#",
   /** Combo — e-book + audiobook (order bump marcado) */
-  combo: "https://pay.gateway.com/METODO_AUDIOBOOK",
+  combo: process.env.NEXT_PUBLIC_CHECKOUT_URL_COMBO || "#",
   /** Desconto 5% — exclusivo para usuários do Exit Intent Popup */
-  discount: "https://pay.gateway.com/METODO_DESCONTO_5",
+  discount: process.env.NEXT_PUBLIC_CHECKOUT_URL_DISCOUNT || "#",
 } as const;
 
 export type CheckoutType = keyof typeof CHECKOUT_URLS;

@@ -36,16 +36,16 @@ const StickyBar    = dynamic(() => import('@/components/ui/sticky-bar'));
 // Substitua pelos links reais dos seus gateways de pagamento
 const CHECKOUT: Record<Lang, { full: string; discount: string }> = {
   pt: {
-    full:     'https://pay.gateway.com/METODO_PT',
-    discount: 'https://pay.gateway.com/METODO_DESCONTO_5_PT',
+    full:     process.env.NEXT_PUBLIC_CHECKOUT_URL_PT_FULL || '#',
+    discount: process.env.NEXT_PUBLIC_CHECKOUT_URL_PT_DISCOUNT || '#',
   },
   en: {
-    full:     'https://pay.gateway.com/METODO_EN',
-    discount: 'https://pay.gateway.com/METODO_DESCONTO_5_EN',
+    full:     process.env.NEXT_PUBLIC_CHECKOUT_URL_EN_FULL || '#',
+    discount: process.env.NEXT_PUBLIC_CHECKOUT_URL_EN_DISCOUNT || '#',
   },
   es: {
-    full:     'https://pay.gateway.com/METODO_ES',
-    discount: 'https://pay.gateway.com/METODO_DESCONTO_5_ES',
+    full:     process.env.NEXT_PUBLIC_CHECKOUT_URL_ES_FULL || '#',
+    discount: process.env.NEXT_PUBLIC_CHECKOUT_URL_ES_DISCOUNT || '#',
   },
 };
 
