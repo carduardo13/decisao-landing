@@ -9,6 +9,7 @@
 // =========================================================
 
 import { useState, useEffect } from 'react';
+import dynamic from 'next/dynamic';
 import { translations, type Lang } from '@/lib/translations';
 
 // Layout
@@ -16,19 +17,20 @@ import TopBanner    from '@/components/layout/top-banner';
 import Navbar       from '@/components/layout/navbar';
 import Footer       from '@/components/layout/footer';
 
-// Sections
+// Sections - Above the fold (Statically imported)
 import Hero         from '@/components/sections/hero';
 import PainPoints   from '@/components/sections/pain-points';
-import ScienceCycle from '@/components/sections/science-cycle';
-import BookPreview  from '@/components/sections/book-preview';
-import MethodCards  from '@/components/sections/method-cards';
-import Testimonials from '@/components/sections/testimonials';
-import CtaSection   from '@/components/sections/cta-section';
-import Faq          from '@/components/sections/faq';
-import ExitPopup    from '@/components/sections/exit-popup';
 
-// UI flutuante
-import StickyBar    from '@/components/ui/sticky-bar';
+// ⚡ Bolt Optimization: Lazily load below-the-fold components
+// Reduces initial JavaScript bundle size and improves Time To Interactive (TTI)
+const ScienceCycle = dynamic(() => import('@/components/sections/science-cycle'));
+const BookPreview  = dynamic(() => import('@/components/sections/book-preview'));
+const MethodCards  = dynamic(() => import('@/components/sections/method-cards'));
+const Testimonials = dynamic(() => import('@/components/sections/testimonials'));
+const CtaSection   = dynamic(() => import('@/components/sections/cta-section'));
+const Faq          = dynamic(() => import('@/components/sections/faq'));
+const ExitPopup    = dynamic(() => import('@/components/sections/exit-popup'));
+const StickyBar    = dynamic(() => import('@/components/ui/sticky-bar'));
 
 // ─── URLs de Checkout por idioma e tipo ────────────────
 // Substitua pelos links reais dos seus gateways de pagamento
