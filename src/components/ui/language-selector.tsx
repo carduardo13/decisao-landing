@@ -4,7 +4,7 @@
 // LanguageSelector — atualizado para usar Lang de translations.ts
 // =========================================================
 
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useCallback, MouseEvent as ReactMouseEvent } from 'react';
 import { type Lang } from '@/lib/translations';
 
 const LANGS: { lang: Lang; flag: string; label: string; fullName: string }[] = [
@@ -43,6 +43,15 @@ export default function LanguageSelector({ lang, onLangChange }: LanguageSelecto
     document.addEventListener('keydown', handleKey);
     return () => document.removeEventListener('keydown', handleKey);
   }, [isOpen]);
+
+  // Shared click handler to avoid per-render function allocations
+  const handleItemClick = useCallback((e: ReactMouseEvent<HTMLButtonElement>) => {
+    const selectedLang = e.currentTarget.getAttribute('data-lang') as Lang;
+    if (selectedLang) {
+      onLangChange(selectedLang);
+      setIsOpen(false);
+    }
+  }, [onLangChange]);
 
   const current = LANGS.find((l) => l.lang === lang) ?? LANGS[0];
 
@@ -83,7 +92,8 @@ export default function LanguageSelector({ lang, onLangChange }: LanguageSelecto
                   role="option"
                   aria-selected={isActive}
                   id={`lang-option-${l}`}
-                  onClick={() => { onLangChange(l); setIsOpen(false); }}
+                  data-lang={l}
+                  onClick={handleItemClick}
                   className={`w-full flex items-center gap-3 px-4 py-3 text-sm text-left transition-colors duration-150 focus-visible:outline-none focus-visible:bg-brand-gold/10 ${
                     isActive
                       ? 'bg-brand-gold/12 text-neutral-text font-semibold'
