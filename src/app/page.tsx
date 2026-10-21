@@ -32,6 +32,8 @@ const Faq          = dynamic(() => import('@/components/sections/faq'));
 const ExitPopup    = dynamic(() => import('@/components/sections/exit-popup'));
 const StickyBar    = dynamic(() => import('@/components/ui/sticky-bar'));
 
+import KintsugiDivider from '@/components/ui/kintsugi-divider';
+
 // ─── URLs de Checkout por idioma e tipo ────────────────
 // Substitua pelos links reais dos seus gateways de pagamento
 const CHECKOUT: Record<Lang, { full: string; discount: string }> = {
@@ -48,11 +50,6 @@ const CHECKOUT: Record<Lang, { full: string; discount: string }> = {
     discount: 'https://pay.gateway.com/METODO_DESCONTO_5_ES',
   },
 };
-
-// ─── Kintsugi divider ─────────────────────────────────
-function KintsugiDivider() {
-  return <div aria-hidden="true" className="kintsugi-divider" />;
-}
 
 // ─── Main Page ────────────────────────────────────────
 export default function Home() {
