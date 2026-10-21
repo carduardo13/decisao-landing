@@ -72,7 +72,7 @@ export default function ScienceCycle({ lang }: ScienceCycleProps) {
                 <div key={i} className="flex items-center">
                   <div
                     title={step.tooltip}
-                    className={`w-24 h-24 md:w-28 md:h-28 rounded-full border-2 flex flex-col items-center justify-center text-center cursor-default transition-transform hover:scale-110 ${colors.colorClass}`}
+                    className={`w-24 h-24 md:w-28 md:h-28 rounded-full border-2 flex flex-col items-center justify-center text-center cursor-default transition-all duration-300 hover:scale-110 hover:shadow-[0_0_20px_rgba(212,175,55,0.4)] ${colors.colorClass}`}
                   >
                     <span className="text-2xl mb-1">{step.icon}</span>
                     <span className={`text-[0.65rem] font-bold leading-tight px-1 whitespace-pre-line ${colors.titleColor}`}>

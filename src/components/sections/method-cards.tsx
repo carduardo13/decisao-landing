@@ -42,9 +42,9 @@ export default function MethodCards({ lang }: MethodCardsProps) {
               key={i}
               className="flex flex-col h-full bg-white rounded-xl shadow-sm border border-neutral-100 p-6 md:p-8 group hover:-translate-y-1 hover:shadow-card transition-all duration-300 relative overflow-hidden"
             >
-              <div className="absolute top-0 left-0 w-full h-[3px] bg-brand-gold" />
+              <div className="absolute top-0 left-0 w-full h-[3px] bg-brand-gold group-hover:h-1 transition-all duration-300" />
               <div
-                className="font-serif font-black text-brand-gold/80 leading-none mb-2 text-5xl"
+                className="font-serif font-black text-brand-gold/80 leading-none mb-2 text-5xl group-hover:scale-110 group-hover:text-brand-gold origin-left transition-all duration-300"
                 aria-hidden="true"
               >
                 {step.letter}

@@ -38,13 +38,13 @@ export default function PainPoints({ lang }: PainPointsProps) {
           {t.items.map((item, i) => (
             <div
               key={i}
-              className="flex flex-col h-full bg-white rounded-2xl p-6 md:p-8 border-l-4 border-feedback-dor shadow-card hover:-translate-y-1 hover:shadow-[0_16px_48px_rgba(61,58,58,0.15)] transition-all duration-300 relative overflow-hidden"
+              className="flex flex-col h-full bg-white rounded-2xl p-6 md:p-8 border-l-4 border-feedback-dor shadow-card hover:-translate-y-1 hover:shadow-[0_16px_48px_rgba(61,58,58,0.15)] transition-all duration-300 relative overflow-hidden group"
             >
               <div
                 aria-hidden="true"
                 className="absolute top-0 right-0 w-20 h-20 rounded-full bg-[radial-gradient(circle,rgba(163,29,29,0.06),transparent)]"
               />
-              <div className="w-12 h-12 rounded-xl bg-feedback-dor/10 flex items-center justify-center text-2xl mb-4">
+              <div className="w-12 h-12 rounded-xl bg-feedback-dor/10 flex items-center justify-center text-2xl mb-4 group-hover:bg-feedback-dor/20 group-hover:scale-110 transition-all duration-300">
                 {item.icon}
               </div>
               <h3 className="font-serif font-bold text-lg text-feedback-dor mb-2.5">{item.title}</h3>

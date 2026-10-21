@@ -24,7 +24,7 @@ export default function Footer({ lang }: FooterProps) {
           <a
             key={item}
             href={item.toLowerCase().includes('faq') || item.toLowerCase().includes('preguntas') ? '#faq' : '#'}
-            className="text-white/40 text-sm hover:text-brand-warm transition-colors"
+            className="text-white/40 text-sm hover:text-brand-warm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-warm focus-visible:ring-offset-2 focus-visible:ring-offset-[#201d1d] rounded-sm"
           >
             {item}
           </a>

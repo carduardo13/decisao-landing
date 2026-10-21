@@ -32,7 +32,10 @@ export default function Testimonials({ lang }: TestimonialsProps) {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
           {t.items.map((item, i) => (
-            <div key={i} className="bg-white rounded-2xl p-6 md:p-8 shadow-soft hover:-translate-y-1 hover:shadow-card transition-all duration-300 h-full flex flex-col gap-4">
+            <div
+              key={i}
+              className="bg-white rounded-2xl p-6 md:p-8 shadow-soft hover:-translate-y-1 hover:shadow-card transition-all duration-300 h-full flex flex-col gap-4 group"
+            >
               <div className="flex items-start justify-between">
                 <span className="inline-flex items-center gap-1.5 text-[10px] font-semibold uppercase tracking-wider text-green-700 bg-green-50 border border-green-200 rounded-full px-2.5 py-0.5">
                   <svg width="8" height="6" viewBox="0 0 10 8" fill="none" aria-hidden="true">
@@ -53,7 +56,7 @@ export default function Testimonials({ lang }: TestimonialsProps) {
               <div className="flex items-center gap-3 mt-auto pt-2">
                 <div
                   aria-hidden="true"
-                  className={`w-10 h-10 rounded-full bg-gradient-to-br ${item.gradient} flex items-center justify-center text-white font-bold shrink-0`}
+                  className={`w-10 h-10 rounded-full bg-gradient-to-br ${item.gradient} flex items-center justify-center text-white font-bold shrink-0 group-hover:scale-110 transition-transform duration-300`}
                 >
                   {item.initial}
                 </div>

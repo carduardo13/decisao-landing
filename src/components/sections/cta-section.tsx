@@ -128,7 +128,7 @@ export default function CtaSection({ lang, checkoutUrl }: CtaSectionProps) {
             id="final-cta-btn"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block px-4 md:px-12 py-4 h-auto w-full sm:w-auto text-center whitespace-normal md:whitespace-nowrap rounded-lg font-extrabold text-base uppercase tracking-wide text-white bg-[#A31D1D] hover:bg-[#7A1212] shadow-lg shadow-red-900/30 transition-all transform hover:scale-105 active:scale-100"
+            className="inline-block px-4 md:px-12 py-4 h-auto w-full sm:w-auto text-center whitespace-normal md:whitespace-nowrap rounded-lg font-extrabold text-base uppercase tracking-wide text-white bg-[#A31D1D] hover:bg-[#7A1212] shadow-lg shadow-red-900/30 transition-all transform hover:scale-105 active:scale-100 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-red-400 focus-visible:ring-offset-2 focus-visible:ring-offset-[#141414]"
           >
             {t.cta}
           </a>

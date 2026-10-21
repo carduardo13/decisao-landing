@@ -36,7 +36,7 @@ export default function Navbar({ lang, onLangChange, checkoutUrl }: NavbarProps)
         <a
           href={checkoutUrl}
           id="nav-cta-btn"
-          className="hidden sm:inline-block bg-gradient-to-br from-feedback-dor to-feedback-dor-dark text-white font-bold text-sm rounded-full px-5 py-2.5 tracking-wide transition-all hover:-translate-y-0.5 hover:shadow-cta"
+          className="hidden sm:inline-block bg-gradient-to-br from-feedback-dor to-feedback-dor-dark text-white font-bold text-sm rounded-full px-5 py-2.5 tracking-wide transition-all hover:-translate-y-0.5 hover:shadow-cta focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-feedback-dor focus-visible:ring-offset-2"
         >
           {t.cta}
         </a>
