@@ -8,7 +8,7 @@
 // Nenhum componente filho tem texto hardcoded.
 // =========================================================
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import dynamic from 'next/dynamic';
 import { translations, type Lang } from '@/lib/translations';
 
@@ -59,29 +59,23 @@ export default function Home() {
   // Estado — idioma ativo
   const [lang, setLang] = useState<Lang>('es');
 
-  // Atualiza SEO metadata na troca de idioma
-  useEffect(() => {
-    const metaData = translations[lang].meta;
-    if (metaData) {
-      document.title = metaData.title;
-      let metaDesc = document.querySelector('meta[name="description"]');
-      if (metaDesc) {
-        metaDesc.setAttribute("content", metaData.description);
-      } else {
-        metaDesc = document.createElement('meta');
-        metaDesc.setAttribute('name', 'description');
-        metaDesc.setAttribute('content', metaData.description);
-        document.head.appendChild(metaDesc);
-      }
-    }
-  }, [lang]);
-
   // URLs por idioma
   const checkoutUrl = CHECKOUT[lang]?.full ?? '#';
   const discountUrl = CHECKOUT[lang]?.discount ?? '#';
 
+  const metaData = translations[lang].meta;
+
   return (
     <>
+      {/* ⚡ Bolt Optimization: Use React 19 Document Metadata Hoisting */}
+      {/* Eliminates layout thrashing and extra commit phases from useEffect DOM manipulation */}
+      {metaData && (
+        <>
+          <title>{metaData.title}</title>
+          <meta name="description" content={metaData.description} />
+        </>
+      )}
+
       {/* ── Banner superior ───────────────────────────── */}
       <TopBanner lang={lang} />
 
