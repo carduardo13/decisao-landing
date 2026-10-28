@@ -1,3 +1,3 @@
-## 2026-10-21 - [Large Initial Bundle via Static Imports in Client Components]
-**Learning:** Found a specific anti-pattern where a Next.js parent component (`src/app/page.tsx`) is marked as `'use client'`, causing all child sections (even those deep below the fold) to be statically bundled into the initial JS payload, heavily inflating initial load time.
-**Action:** Use `next/dynamic` to lazily load heavy below-the-fold sections and floating components, significantly reducing the initial bundle size and improving Time To Interactive (TTI) on long scrolling landing pages.
+## 2024-10-28 - Optimizing Un-debounced Scroll Event Listener
+ **Learning:** Running JavaScript logic on every scroll frame (e.g. for inactivity tracking or popup visibility) can lead to layout thrashing and lower FPS. A custom throttle utility can be added without relying on external dependencies like lodash.
+ **Action:** For scroll or resize events, implement or reuse a lightweight throttle utility (`src/lib/utils.ts`) with an appropriate threshold (e.g., 200ms) to ensure JS doesn't block the main thread excessively.

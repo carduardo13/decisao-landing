@@ -6,6 +6,7 @@
 
 import { useEffect, useState, useCallback, useRef } from 'react';
 import { translations, type Lang } from '@/lib/translations';
+import { throttle } from '@/lib/utils';
 
 const SESSION_KEY = 'decisao_exitPopupShown';
 const INACTIVITY_THRESHOLD_MS = 15_000;
@@ -46,7 +47,7 @@ export default function ExitPopup({ lang, discountUrl }: ExitPopupProps) {
     const handleMouseLeave = (e: MouseEvent) => {
       if (!isMobile() && hasEnteredPage.current && e.clientY < 50) showPopup();
     };
-    const handleScroll = () => {
+    const handleScroll = throttle(() => {
       const currentY = window.scrollY;
       if (!hasScrolled.current) {
         hasScrolled.current = true;
@@ -58,7 +59,7 @@ export default function ExitPopup({ lang, discountUrl }: ExitPopupProps) {
         lastScrollY.current = currentY;
         resetInactivityTimer();
       }
-    };
+    }, 200);
     const handleVisibilityChange = () => {
       if (document.visibilityState === 'hidden') showPopup();
     };
